@@ -1,150 +1,65 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-
 * {
     box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto';
+    color: #1A1818;
     margin: 0;
-    padding: 0;
-    background-color: #E5E5E5;
 }
 
-.wrapper {
-background-image: url(img/image1.png);
-background-repeat: no-repeat;
-background-attachment: fixed;
-background-position: center;
-background-size: cover;
-position: relative;
-width: 1440px;
-height: 800px;
+ul {
+    list-style-type: none;
+    text-transform: lowercase;
 }
 
-header {
-display: inline;
-text-decoration: none;
+a {
+    text-decoration: none;
+    color: #1A1818;
 }
 
-li, a {
-font-family: 'Roboto';
-font-style: normal;
-font-weight: 400;
-font-size: 15px;
-line-height: 15px;
-text-transform: lowercase;
-color: #1A1818;
-text-decoration: none;
+.header li{
+    display: inline-block;
+    font-style: normal;
+    font-size: 15px;
+    font-weight: 400;
 }
-
-
 .logo {
-    height: 29.4px;
+    position: absolute;
+    float: left;
+    margin-left: 18px;
+    margin-top: 19px;
+
 }
 
-.items {
-font-family: 'Roboto';
-font-style: normal;
-font-weight: 400;
-font-size: 57px;
-line-height: 60px;
-letter-spacing: 1.2px;
-text-transform: lowercase;
-color: #1A1818;
-text-decoration: none;
+.navigation-list {
+    position: relative;
+    float: left;
+    margin-left: 122px;
+    margin-top: 21px;
 }
 
-.shop-btn {
-box-sizing: border-box;
-min-width: 100px;
-font-family: 'Roboto';
-font-size: 15px;
-font-weight: 700;
-border: 1px solid #000000;
-background: none;
-opacity: 100%;
-color: #1A1818;
-padding: 5px 15px;
-text-align: center;
+.navigation-right {
+    position: relative;
+    float: right;
+    margin-right: 12px;
+    margin-top: 21px;
 }
 
-.block {
-font-family: 'Roboto';
-font-style: normal;
-font-weight: 700;
-font-size: 60px;
-line-height: 60px;
-letter-spacing: 1.2px;
-color: #1A1818;
-text-decoration: none;
-}
-
-.drawings {
-width: 835px;
-height: 1113px;
-height: 1113px;
-}
-
-.sand-sofa {
-    width: 693px;
-    height: 924px;
-}
-
-.green-sofa {
-    width: 480px;
-    height: 640px;
-}
-
-.benches {
-    width: 835px;
-    height: 626px;
-}
-
-.two-chairs {
-    width: 693px;
-    height: 924px;
-}
-
-.one-chair {
-    width: 480px;
-    height: 640px;
-}
-
-.three-benches {
-    width: 835px;
-    height: 636px;
+h1,
+h2 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 57px;
+    line-height: 60px;
+    letter-spacing: 1.2px;
 }
 
 .collection {
-text-transform: none;
-}
-
-.description {
-text-transform: none; 
-}
-
-.design {
-text-transform: none;  
-}
-
-.subscribe {
-font-family: 'Roboto';
-font-style: normal;
-font-weight: 400;
-font-size: 45px;
-line-height: 47px;
-letter-spacing: 0.94px;
-color: #1A1818;
-}
-
-.subscribe-btn {
-position: absolute;
-width: 209px;
-height: 47px;
-font-family: 'Roboto';
-font-style: normal;
-font-weight: 400;
-font-size: 46px;
-line-height: 47px;
-text-align: center;
-letter-spacing: 0.94px;
-text-transform: lowercase;
-color: #000000;
+    background-image: url(img/Background-of-1st-section.jpg);
+    position: absolute;
+    width: 1440px;
+    height: 800px;
+    left: 0px;
+    top: 0px;
 }
