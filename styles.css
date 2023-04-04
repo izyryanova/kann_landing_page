@@ -3,63 +3,198 @@
 }
 
 body {
-    font-family: 'Roboto';
+    font-family: 'Roboto', sans-serif;
     color: #1A1818;
+    background-color: #E5E5E5;
     margin: 0;
+    max-width: 1440px;
 }
 
-ul {
-    list-style-type: none;
-    text-transform: lowercase;
+/*  Стили навигации  */
+
+.header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-a {
+.navigation-left {
+    align-self: flex-start;
+}
+
+.navigation-left .logo {
+    padding: 19.02px 19.76px 0 20px;
+} 
+
+.navigation-left ul li a {
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 15px;
+    color: #1A1818;
+}
+
+.navigation-left ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 21px 16px;
+}
+
+.navigation-right {
+    align-self: flex-end;
+}
+
+.navigation-right .lang:visited {
+    color: rgba(26, 24, 24, 0.25);
+}
+
+.navigation-right li a {
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 15px;
+    color: #1A1818;
+}
+
+.navigation-right ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 21px 16px;
+}
+
+/*  Стили 1-й секции  */
+
+.hero .container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+	
+    padding-bottom: 115px;
+    background-color: blanchedalmond;
+}
+
+ .hero .background {
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    }
+
+.hero .container .column {
+    flex-direction: column;
+    margin-left: 18px;
+}
+
+.hero .title {
+    font-weight: 700;
+    font-size: 57px;
+    line-height: 60px;
+    max-width: 418px;
+    margin-bottom: 10px;
+    align-self: flex-start;
+    position: relative;
+}
+
+.hero .container .link {
+    border: 1px solid #000000;
+    font-weight: 700;
+    font-size: 15px;
+    text-decoration: none;
+    color: #1A1818;
+
+    position: relative;
+    padding: 5px 15px;
+}
+
+/*  Стили 2-й секции  */
+
+.production .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 18px 115px;
+}
+
+.production .container .column {
+    flex-direction: column;
+}
+
+.production .container .title {
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 60px;
+    max-width: 392px;
+    align-self: flex-start;
+}
+
+.production .container .link {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
     text-decoration: none;
     color: #1A1818;
 }
 
-.header li{
-    display: inline-block;
-    font-style: normal;
-    font-size: 15px;
-    font-weight: 400;
+.production .container .prod-img {
+    max-width: 835px;
+    height: auto;
 }
-.logo {
-    position: absolute;
-    float: left;
-    margin-left: 18px;
-    margin-top: 19px;
+
+/*  Стили 3-й секции  */
+
+.sofas .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 18px 120px;
+}
+
+.sofas .container .sofa-img1 {
+    max-width: 693px;
+    height: auto;
+}
+
+.sofas .container figure {
+    margin-right: 0;
+    flex-basis: 480px;
+}
+
+#under-img {
+    display: inline-flex;
+}
+
+#sofa-link {
+    text-decoration: none;
+    color: #1A1818;
+    padding-left: 338px;
+}
+
+/*  Стили 4-й секции  */
+
+.benches .container {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: auto 10%;
+    grid-column-gap: 89px;
+    padding: 0 18px 116px;
+}
+
+#img-bench1 {
+    grid-row: 1/3;
 
 }
 
-.navigation-list {
-    position: relative;
-    float: left;
-    margin-left: 122px;
-    margin-top: 21px;
-}
-
-.navigation-right {
-    position: relative;
-    float: right;
-    margin-right: 12px;
-    margin-top: 21px;
-}
-
-h1,
-h2 {
-    font-style: normal;
+.benches .container .title {
+    grid-row: 1/2;
+    max-width: 424px;
     font-weight: 700;
-    font-size: 57px;
+    font-size: 60px;
     line-height: 60px;
     letter-spacing: 1.2px;
 }
 
-.collection {
-    background-image: url(img/Background-of-1st-section.jpg);
-    position: absolute;
-    width: 1440px;
-    height: 800px;
-    left: 0px;
-    top: 0px;
+.benches .container .link {
+    grid-row: 2/3;
 }
