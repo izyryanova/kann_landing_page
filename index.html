@@ -6,95 +6,122 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>KANN shop</title>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" as="font">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="styles.css">
     </head>
 
     <body>
         <header class="header">
-            <nav class="navigation-left">
-                <a href="#">
-                    <img class="logo" src="img/Logo.png" width="82,25px" height="29.4px"alt="logo">
-                </a>
-                <ul class="navigation-list">
-                    <li>
-                        <a href="#">shop</a>
-                    </li>
-                    <li>
-                        <a href="#">projets</a>
-                    </li> 
-                    <li>
-                        <a href="#">journal</a>
-                    </li> 
-                    <li>
-                        <a href="#">à propos</a>
-                    </li>
-                </ul>
-            </nav>
-
-            <nav class="navigation-right">
-                <ul>
-                    <li>
-                        <a href="#" class="lang">fr</a>
-                    </li> 
-                    <li>
-                        <a href="#" class="lang">en</a>
-                    </li> 
-                    <li>
-                        <a href="#">rechercher</a>
-                    </li> 
-                    <li>
-                        <a href="#">points de vente</a>
-                    </li> 
-                    <li>
-                        <a href="#">panier(0)</a>
-                    </li> 
-                </ul>      
-            </nav>
-        </header>
-        
-        <section class="block collection">
-            <h1 class="collection-title">Galta collection by SCMP Design Office</h1>
-            <a href="#" class="shop-link">shop</a>
-        </section>
-
-        <section class="block production">
-            <h2 class="production-title">Dans les coulisses de la fabrication Kann</h2>
-
-            <img src="img/Drawings.jpg" class="production-image" alt="Production drawings">
-
-            <a href="#" class="read-article">Lire l'article</a>
-        </section>
-
-        <section class="block sofas">
-            <img src="img/Sand-sofa.jpg" class="sand-sofa" alt="Sofa in the room">
-            
-            <figure>
-                <img src="img/Green-sofa.jpg" class="green-sofa" alt="Sofa">
-                    <figcaption class="sofa-description">Cut / vert sablé</figcaption>
-
-                    <a href="#" class="shop-link-sofa">
-                        <figcaption class="shop-link-description">Shop</figcaption>
+            <div class="container">
+                <nav class="navigation-left">
+                    <a href="#">
+                        <img class="logo" src="img/logo.svg" alt="logo">
                     </a>
-            </figure>
+                    <ul class="navigation-list">
+                        <li>
+                            <a href="#">shop</a>
+                        </li>
+                        <li>
+                            <a href="#">projets</a>
+                        </li> 
+                        <li>
+                            <a href="#">journal</a>
+                        </li> 
+                        <li>
+                            <a href="#">à propos</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <nav class="navigation-right">
+                    <ul>
+                        <li>
+                            <a href="#" class="lang">fr</a>
+                        </li> 
+                        <li>
+                            <a href="#" class="lang">en</a>
+                        </li> 
+                        <li>
+                            <a href="#">rechercher</a>
+                        </li> 
+                        <li>
+                            <a href="#">points de vente</a>
+                        </li> 
+                        <li>
+                            <a href="#">panier(0)</a>
+                        </li> 
+                    </ul>      
+                </nav>
+            </div>
+        </header>
+
+        <!-- 1-я секция -->
+        <section class="hero">
+            <div class="container">
+              <!-- <img src="img/hero-background.jpg" class="background"> -->
+
+                <div class="column">
+                    <h1 class="title">Galta collection by SCMP Design Office</h1>
+
+                    <a href="#" class="link">shop</a>
+                </div>
+            </div>
         </section>
 
-        <section class="block benches-description">
-            <h2 class="benches-description-title">Linéaire et minimaliste, les bancs Galta dessinés par SCMP Design Office</h2>
+        <!-- 2-я секция -->
+        <section class="production">
+            <div class="container">
+                <div class="column"> 
+                    <h2 class="title">Dans les coulisses de la fabrication Kann</h2>
 
-            <img src="img/Benches.jpg" class="benches" alt="Benches in the room">
+                    <a href="#" class="link">lire l'article</a>
+                </div>
 
-            <a href="#" class="shop-link-benches">Shop</a>
+                <img src="img/prod-img.jpg" class="prod-img" alt="Production drawings">
+            </div>
         </section>
 
-        <section class="block chairs">
+        <!-- 3-я секция -->
+        <section class="sofas">
+            <div class="container">
+                <img src="img/sofa-img1.jpg" class="sofa-img1" alt="Sofa in the room">
+            
+                <figure class="img-description">
+                    <img src="img/sofa-img2.jpg" class="sofa-img2" alt="Sofa">
+                        
+                        <span id="under-img">
+                            <figcaption class="text">cut / vert sablé</figcaption>
+                            
+                            <figcaption>
+                                <a href="#" id="sofa-link">shop</a>
+                            </figcaption>
+                        </span>
+                </figure>
+            </div>
+        </section>
+
+        <!-- 4-я секция -->
+        <section class="benches">
+            <div class="container">
+                <img src="img/bench-img1.jpg" id="img-bench1" alt="Benches in the room">
+
+                <h2 class="title">Linéaire et minimaliste, les bancs Galta dessinés par SCMP Design Office</h2>
+
+                <a href="#" class="link">shop</a>
+            </div>
+        </section>
+
+        <!-- 5-я секция -->
+        <section class="chairs">
             <figure>
-                <img src="img/Two-chairs.jpg" class="two-chairs" alt="Two chairs in the room">
+                <img src="img/chair-img1.jpg" class="two-chairs" alt="Two chairs in the room">
                     <figcaption class="chairs-description">voir toutes les chaises</figcaption>
             </figure>
 
             <figure>
-                <img src="img/Chair.jpg" class="chair" alt="Chair">
+                <img src="img/chair-img2.jpg" class="chair" alt="Chair">
                     <figcaption class="chair-description">tal / chêne noir</figcaption>
 
                     <a href="#" class="shop-link-chair">
@@ -103,67 +130,68 @@
             </figure>
         </section>
         
+        <!-- 6-я секция -->
         <section class="block design">
             <h2 class="benches-design-title">
                 Des lignes horizontales s'encastrent dans le piètement, rendant apparente la technicité de l'assemblage.
             </h2>
 
-            <img src="img/Three-benches.jpg" class="three-benches" alt="Unique design of out benches">
+            <img src="img/bench-img2.jpg" class="bench-img2" alt="Unique design of our benches">
 
             <a href="#" class="last-shop-link"></a>
 
             <ul class="items">
-                <a href="#">
-                    <li>Banc</li>
-                </a>
-                <a href="#">
-                    <li>banquette</li>
-                </a>
-                <a href="#">
-                    <li>Bibliothèque</li>
-                </a>
-                 <a href="#">
-                    <li>buffet</li>
-                </a>
-                 <a href="#">
-                    <li>bureau</li>
-                </a>
-                 <a href="#">
-                    <li>canapé</li>
-                </a>
-                 <a href="#">
-                    <li>chaise</li>
-                </a>
-                 <a href="#">
-                    <li>chaise haute</li>
-                </a>
-                 <a href="#">
-                    <li>chariot bar</li>
-                </a>
-                 <a href="#">
-                    <li>étagère</li>
-                </a>
-                 <a href="#">
-                    <li>fauteuil</li>
-                </a>
-                 <a href="#">
-                    <li>luminaire</li>
-                </a>
-                 <a href="#">
-                    <li>miroir</li>
-                </a>
-                 <a href="#">
-                    <li>paravent</li>
-                </a>
-                 <a href="#">
-                    <li>patère et valet</li>
-                </a>
-                 <a href="#">
-                    <li>table basse et d'appoint</li>
-                </a>
-                 <a href="#">
-                    <li>table de repas</li>
-                </a>
+                <li>
+                    <a href="#">Banc</a>
+                </li>
+                <li>
+                    <a href="#">banquette</a>
+                </li>
+                <li>
+                    <a href="#">Bibliothèque</a>
+                </li>
+                 <li>
+                    <a href="#">buffet</a>
+                </li>
+                <li> 
+                    <a href="#">bureau</a>
+                </li>
+                 <li>
+                    <a href="#">canapé</a>
+                </li>
+                 <li>
+                    <a href="#">chaise</a>
+                </li>
+                 <li>
+                    <a href="#">chaise haute</a>
+                </li>
+                 <li>
+                    <a href="#">chariot bar</a>
+                </li>  
+                 <li>
+                    <a href="#">étagère</a>
+                </li>
+                 <li>
+                    <a href="#">fauteuil</a>
+                </li>
+                 <li>
+                    <a href="#">luminaire</a>
+                </li>
+                 <li>
+                    <a href="#">miroir</a>
+                </li>
+                 <li>
+                    <a href="#">paravent</a>
+                </li>
+                 <li>
+                    <a href="#">patère et valet</a>
+                </li>
+                 <li>
+                    <a href="#">table basse et d'appoint</a>
+                </li>
+                 <li>
+                    <a href="#">table de repas</a>
+                </li>
             </ul>
 
             <div class="subscribe">
@@ -172,8 +200,6 @@
             </div>
                 <a href="#" class="subscribe-link">S'abonner</a>
         </section>
-
-        <hr>
 
         <footer>
             <nav class="footer-nav">
